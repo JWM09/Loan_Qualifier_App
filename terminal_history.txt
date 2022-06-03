@@ -1,0 +1,6 @@
+    1  pip list
+    2  conda activate dev
+    3  conda list fire
+    4  conda list questionary
+    5  history 50 
+    6  history 50 > terminal_history.txt

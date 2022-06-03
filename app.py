@@ -111,6 +111,8 @@ def save_qualifying_loans(qualifying_loans):
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
 
+# JWM New Code.  This function will save user data to the CSV file
+def save_csv
 
 def run():
     """The main function for running the script."""
