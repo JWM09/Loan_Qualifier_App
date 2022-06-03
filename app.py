@@ -9,6 +9,7 @@ Example:
 import sys
 import fire
 import questionary
+import csv
 from pathlib import Path
 
 from qualifier.utils.fileio import load_csv
@@ -111,8 +112,13 @@ def save_qualifying_loans(qualifying_loans):
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
 
-# JWM New Code.  This function will save user data to the CSV file
-def save_csv
+# JWM New Code.  This function will save user data to the CSV file(initial code is from challenge 01)
+def save_csv(qualifying_loans):
+    with open('available_loans.csv', 'w') as csvfile:
+        csvwriter = csv.writer(csvfile, delimiter=",") 
+    csvwriter.writerow(header)
+    for loan in inexpensive_loans:
+        csvwriter.writerow(loan.values())
 
 def run():
     """The main function for running the script."""
