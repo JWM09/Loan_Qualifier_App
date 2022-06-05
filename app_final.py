@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Loan Qualifier Application.
-
-This is a command line application to match applicants with qualifying loans.
-
-Example:
-    $ python app.py
-"""
+# These are imports required to run the main program
 import sys
 import fire
 import questionary
@@ -24,7 +18,7 @@ from qualifier.filters.credit_score import filter_credit_score
 from qualifier.filters.debt_to_income import filter_debt_to_income
 from qualifier.filters.loan_to_value import filter_loan_to_value
 
-
+#User bringing in the approrpriate csv data file (daily_rate_sheet.csv)
 def load_bank_data():
     """Ask for the file path to the latest banking data and load the CSV file.
 
@@ -39,7 +33,7 @@ def load_bank_data():
 
     return load_csv(csvpath)
 
-
+#asking user for key data to find available loans
 def get_applicant_info():
     """Prompt dialog to get the applicant's financial information.
 
@@ -63,6 +57,7 @@ def get_applicant_info():
 
 
 def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_value):
+    # Calculate the monthly debt ratio
     """Determine which loans the user qualifies for.
 
     Loan qualification criteria is based on:
@@ -84,7 +79,7 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
     """
 
-    # Calculate the monthly debt ratio
+
     monthly_debt_ratio = calculate_monthly_debt_ratio(debt, income)
     print(f"The monthly debt to income ratio is {monthly_debt_ratio:.02f}")
 
@@ -101,37 +96,3 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     print(f"Found {len(bank_data_filtered)} qualifying loans")
 
     return bank_data_filtered
-
-
-def save_qualifying_loans(qualifying_loans):
-    """Saves the qualifying loans to a CSV file.
-
-    Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
-    """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
-
-# JWM New Code.  This function will save user data to the CSV file(initial code is from challenge 01)
-
-
-def run():
-    """The main function for running the script."""
-
-    # Load the latest Bank data
-    bank_data = load_bank_data()
-
-    # Get the applicant's information
-    credit_score, debt, income, loan_amount, home_value = get_applicant_info()
-
-    # Find qualifying loans
-    qualifying_loans = find_qualifying_loans(
-        bank_data, credit_score, debt, income, loan_amount, home_value
-    )
-
-    # Save qualifying loans
-    save_qualifying_loans(qualifying_loans)
-
-
-if __name__ == "__main__":
-    fire.Fire(run)
