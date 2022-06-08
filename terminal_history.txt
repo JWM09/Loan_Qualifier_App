@@ -1,6 +1,6 @@
-    1  pip list
-    2  conda activate dev
-    3  conda list fire
-    4  conda list questionary
-    5  history 50 
+    1  conda activate dev
+    2  git status
+    3  git add .
+    4  git commit -m "Starting to create the final submission"
+    5  git push
     6  history 50 > terminal_history.txt
