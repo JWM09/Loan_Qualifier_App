@@ -1,17 +1,3 @@
-   10  git push
-   11  clear
-   12  python app_final.py
-   13  python app_final.py
-   14  python app_final.py
-   15  clear
-   16  python app_final.py
-   17  git status
-   18  git add .
-   19  git commit -m "adding to readme file"
-   20  clear
-   21  python app_final.py 
-   22  python app_final.py 
-   23  python app_final.py 
    24  python app_final.py 
    25  python app_final.py 
    26  python app_final.py 
@@ -48,3 +34,17 @@
    57  git commit -m 'saving code'
    58  git push
    59  history 50 > terminal_history.txt
+   60  git status
+   61  git add .
+   62  git commit -m "review readme file"
+   63  git push
+   64  git status
+   65  git add .
+   66  git commit -m 'editing readme'
+   67  git push
+   68  python app_final.py 
+   69  git status
+   70  git add .
+   71  git commit -m 'Final Submission'
+   72  git push
+   73  history 50 > terminal_history.txt
