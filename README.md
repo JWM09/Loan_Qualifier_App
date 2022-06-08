@@ -7,14 +7,24 @@ for this assigment we have been tasked with enhancing a loan qualifcation app so
 
 ## Technologies
 
-The program has been written in Python, and created using visual studio for coding purposes and git bash for testing.  We are running the program in the conda dev environment.
-- libraries used include:
+The program has been written in Python, and created using visual studio for coding purposes and git bash for testing.  We are running the program in the conda dev environment. Libraries used include:
+
+    - sys
+    - fire
+    - questionary
+    - csv
+    - pathlib (Path)
 
 ---
 
 ## Installation Guide
 
 In this section, you should include detailed installation notes containing code blocks and screenshots.
+This program is designed to be run in your terminal (all testing done in git bash for windows).  To run the program run python app_final.py
+
+### Start the Program
+![Start the Program](starting program.png)
+
 
 ---
 
