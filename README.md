@@ -1,14 +1,14 @@
 # Loan_Qualifier_App
-UW FinTech Challenge Assignment 02
-# Project Title
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+UW FinTech Challenge Assignment 02
+for this assigment we have been tasked with enhancing a loan qualifcation app so that user can export their available loans (based on key criteria they enter) to a csv file for future reference.
 
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+The program has been written in Python, and created using visual studio for coding purposes and git bash for testing.  We are running the program in the conda dev environment.
+- libraries used include:
 
 ---
 
