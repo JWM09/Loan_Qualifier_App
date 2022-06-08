@@ -7,7 +7,7 @@ This contains a helper function for loading and saving CSV files.
 import csv
 
 
-def load_csv(csvpath, bank_data, header=None):
+def load_csv(csvpath):
     """Reads the CSV file from path provided.
 
     Args:
@@ -29,7 +29,7 @@ def load_csv(csvpath, bank_data, header=None):
             data.append(row)
     return data
 
-def save_csv(csv_path_name, bank_data, header=None):
+def save_csv(csv_path_name):
     with open(csv_path_name, "w", newline='') as csv_file:
         writer = csv.writer(csv_file, '')
         print(f"Creating the Header row")

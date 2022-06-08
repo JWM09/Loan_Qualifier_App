@@ -102,7 +102,7 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
     return bank_data_filtered
 
-
+#need to find qualifying loans data
 def save_qualifying_loans(qualifying_loans):
     """Saves the qualifying loans to a CSV file.
 
@@ -113,20 +113,23 @@ def save_qualifying_loans(qualifying_loans):
     # YOUR CODE HERE!
 
 
-    csvpath = questionary.text("Would you like to save your qualified loans? ").ask()
-    csvpath = Path(csvpath)
-    if not csvpath.exists():
+    if not qualifying_loans:
         sys.exit(f"Thank you for researching loans.")
 
-    return load_csv(csvpath)
+    data_save = questionary.confirm("would you like to save your qualified loans?").ask()
+
+    if data_save:
+        csvpath = questionary.text("Where do you want to save your loand (file path)? ").ask()
+        csvpath = Path(csvpath)
+    return save_csv(csvpath, qualifying_loans)
 
 # JWM New Code.  This function will s:ave user data to the CSV file(initial code is from challenge 01)
-def save_csv(output_path, data, header=None):
-    with open('()', 'w') as csvfile:
+def save_csv(csvpath, data, header=None):
+    with open(csvpath, 'w', newline="") as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=",") 
-        csvwriter.writerow(header)
-        for loan in available_loans:
-            csvwriter.writerow(loan.values())
+        #csvwriter.writerow(header)
+        
+        csvwriter.writerow(data)
 
 def run():
     """The main function for running the script."""
