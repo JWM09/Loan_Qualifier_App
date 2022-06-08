@@ -23,7 +23,7 @@ In this section, you should include detailed installation notes containing code 
 This program is designed to be run in your terminal (all testing done in git bash for windows).  To run the program run python app_final.py
 
 ### Start the Program
-!["Start the Program"](images/starting_program.png)
+!["Start the Program"](Images/starting_program.png)
 
 
 ---
