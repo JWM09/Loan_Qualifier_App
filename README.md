@@ -69,7 +69,7 @@ Special thanks to the following:
 > Gerrit Hall - instructor\
 > Kyle Gee & Aarti Couture - teaching assistants\
 > Katie Kirby - tutor\
-> Dan McQueen & Peter Paquette - classmates\
+> Dan McQueen & Peter Paquette - classmates
 
 ---
 
