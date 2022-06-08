@@ -66,10 +66,10 @@ Note:  It is very important to save your file as a .csv, otherwise it will be sa
 This program has been developed by Jon Mitchel as part of the learning for the University of Washington FinTech Bootcamp 2022.
 
 Special thanks to the following:
-    Gerrit Hall - instructor
-    Kyle Gee & Aarti Couture - teaching assistants
-    Katie Kirby - tutor
-    Dan McQueen & Peter Paquette - classmates
+> Gerrit Hall - instructor\
+> Kyle Gee & Aarti Couture - teaching assistants\
+> Katie Kirby - tutor\
+> Dan McQueen & Peter Paquette - classmates\
 
 ---
 
