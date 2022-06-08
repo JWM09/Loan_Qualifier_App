@@ -6,7 +6,7 @@ against the bank's maximum loan size.
 
 """
 
-
+# No programming required on this module.  Function provided below:
 def filter_max_loan_size(loan_amount, bank_list):
     """Filters the bank list by the maximum allowed loan amount.
 

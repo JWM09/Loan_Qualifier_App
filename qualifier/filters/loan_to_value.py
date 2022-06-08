@@ -6,7 +6,7 @@ to home value ratio.
 
 """
 
-
+# No programming required on this module.  Function provided below:
 def filter_loan_to_value(loan_to_value_ratio, bank_list):
     """Filters the bank list by the maximum loan to value ratio.
 

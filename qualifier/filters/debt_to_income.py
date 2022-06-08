@@ -6,7 +6,7 @@ maximum debt-to-income ratio.
 
 """
 
-
+# No programming required on this module.  Function provided below:
 def filter_debt_to_income(monthly_debt_ratio, bank_list):
     """Filters the bank list by the maximum debt-to-income ratio allowed by the bank.
 

@@ -29,6 +29,8 @@ def load_csv(csvpath):
             data.append(row)
     return data
 
+
+#This function was created by me, but is not being used in the app_final version at this time.  Need to figure out what is going wrong
 def save_csv(csv_path_name):
     with open(csv_path_name, "w", newline='') as csv_file:
         writer = csv.writer(csv_file, '')

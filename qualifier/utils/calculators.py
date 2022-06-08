@@ -6,7 +6,7 @@ determine loan qualifications.
 
 """
 
-
+# No programming required on this module.  Function provided below:
 def calculate_monthly_debt_ratio(monthly_debt_payment, monthly_income):
     """Calculates users monthly debt to income ratio.
 
