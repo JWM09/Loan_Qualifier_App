@@ -78,7 +78,7 @@ def save_qualifying_loans(qualifying_loans):
     data_save = questionary.confirm("would you like to save your qualified loans?").ask()
 
     if data_save:
-        csvpath = questionary.text("Where do you want to save your loand (file path)? ").ask()
+        csvpath = questionary.text("Where do you want to save your loan (file path)? ").ask()
         csvpath = Path(csvpath)
     else:
         sys.exit(f"Thank you for researching loans.")
